@@ -80,9 +80,9 @@ You should see the message active (running).
 ```
 #### 5.5 I enabled this new changes on the conf file by;
 ```bash 
-    sudo a2ensite 000-default.conf`    # to enable config file
-    sudo apache2ctl configtest`        # Test the config (it should return an "OK") 
-    sudo systemctl restart apache2`    # to restart apache2 webserver
+    sudo a2ensite 000-default.conf     # to enable config file
+    sudo apache2ctl configtest         # Test the config (it should return an "OK") 
+    sudo systemctl restart apache2     # to restart apache2 webserver
 ```
 #### 5.5 I installed certbot using;
     sudo apt install certbot python3-certbot-apache
@@ -106,4 +106,3 @@ You should see the message active (running).
             RewriteCond %{HTTP_HOST} ^(www\.)?vee-op\.mooo\.com$ [NC]
             RewriteRule ^ https://vee-op.mooo.com%{REQUEST_URI} [L,R=301]
     </VirtualHost>
-
